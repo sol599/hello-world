@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+public/**/index.js*
+public/**/index.html
+public/**/glide.json
+.env
+.next
+.vercel
+build
+public/all.json
+public/glide-brand-image/images.json

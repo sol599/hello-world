@@ -1,0 +1,23 @@
+{
+  "name": "Barcode",
+  "category": "Image",
+  "description": "Generates barcode images",
+  "author": "David Siegel <david@glideapps.com>",
+  "result": {
+    "type": "image-uri"
+  },
+  "about": "\n      Uses [ruggedtabletpc.com](https://ruggedtabletpc.com) to generate images of barcodes.\n\n      Only supports 11-digit barcodes for now.\n    ",
+  "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M3 4H1V44H3V4Z\" fill=\"currentColor\"/>\n    <path d=\"M47 4H45V44H47V4Z\" fill=\"currentColor\"/>\n    <path d=\"M8 4H6V39H8V4Z\" fill=\"currentColor\"/>\n    <path d=\"M42 4H40V39H42V4Z\" fill=\"currentColor\"/>\n    <path d=\"M37 4H35V39H37V4Z\" fill=\"currentColor\"/>\n    <path d=\"M18 4H11V39H18V4Z\" fill=\"currentColor\"/>\n    <path d=\"M33 4H27V39H33V4Z\" fill=\"currentColor\"/>\n    <path d=\"M24 4H21V39H24V4Z\" fill=\"currentColor\"/>\n    </svg>",
+  "params": [
+    {
+      "name": "content",
+      "displayName": "Content",
+      "type": "primitive"
+    },
+    {
+      "name": "size",
+      "displayName": "Size",
+      "type": "number"
+    }
+  ]
+}

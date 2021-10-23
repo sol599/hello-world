@@ -1,0 +1,810 @@
+{
+  "app-icon": {
+    "name": "Glide App Icon",
+    "category": "Glide",
+    "description": "Gets a Glide app's icon",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "about": "\n      Given a URL to a Glide app or page, this column produces a link to the icon for that app or page.\n    ",
+    "icon": "\n        <svg\n          width=\"48\"\n          height=\"48\"\n          viewBox=\"0 0 26 27\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M0 14.85L14.3 0V7.29C14.3 11.4653 11.0406 14.85 7.02 14.85H0Z\"\n            fill=\"currentColor\"\n          />\n          <path\n            d=\"M11.7 19.71C11.7 15.5347 14.9594 12.15 18.98 12.15H26L11.7 27V19.71Z\"\n            fill=\"currentColor\"\n          />\n        </svg>\n    ",
+    "params": [
+      {
+        "name": "url",
+        "displayName": "Glide URL",
+        "type": "uri"
+      }
+    ]
+  },
+  "barcode": {
+    "name": "Barcode",
+    "category": "Image",
+    "description": "Generates barcode images",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "about": "\n      Uses [ruggedtabletpc.com](https://ruggedtabletpc.com) to generate images of barcodes.\n\n      Only supports 11-digit barcodes for now.\n    ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path d=\"M3 4H1V44H3V4Z\" fill=\"currentColor\"/>\n    <path d=\"M47 4H45V44H47V4Z\" fill=\"currentColor\"/>\n    <path d=\"M8 4H6V39H8V4Z\" fill=\"currentColor\"/>\n    <path d=\"M42 4H40V39H42V4Z\" fill=\"currentColor\"/>\n    <path d=\"M37 4H35V39H37V4Z\" fill=\"currentColor\"/>\n    <path d=\"M18 4H11V39H18V4Z\" fill=\"currentColor\"/>\n    <path d=\"M33 4H27V39H33V4Z\" fill=\"currentColor\"/>\n    <path d=\"M24 4H21V39H24V4Z\" fill=\"currentColor\"/>\n    </svg>",
+    "params": [
+      {
+        "name": "content",
+        "displayName": "Content",
+        "type": "primitive"
+      },
+      {
+        "name": "size",
+        "displayName": "Size",
+        "type": "number"
+      }
+    ]
+  },
+  "capitalize": {
+    "name": "Capitalize Text",
+    "category": "Text",
+    "description": "Converts the first character of string to upper case and the remaining to lower case.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "clamp": {
+    "name": "Clamp",
+    "category": "Number",
+    "description": "Clamps a number within inclusive lower and upper bounds.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "number"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "displayName": "Number"
+      },
+      {
+        "name": "lower",
+        "type": "number",
+        "displayName": "Lower Bound"
+      },
+      {
+        "name": "upper",
+        "type": "number",
+        "displayName": "Upper Bound"
+      }
+    ]
+  },
+  "compact-integer": {
+    "name": "Compact Integer",
+    "category": "Number",
+    "description": "Converts an integer into its most compact representation.",
+    "author": "HubSpot <https://github.com/HubSpot/humanize>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "displayName": "Number"
+      },
+      {
+        "name": "decimals",
+        "type": "number",
+        "displayName": "Decimal Places"
+      }
+    ]
+  },
+  "deburr": {
+    "name": "Deburr Text",
+    "category": "Text",
+    "description": "Deburrs string by converting Latin-1 Supplement and Latin Extended-A letters to basic Latin letters and removing combining diacritical marks.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "decode": {
+    "name": "Decode Text",
+    "category": "Encoding",
+    "description": "Decode text in a variety of formats.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "encoding",
+        "type": "string",
+        "displayName": "Encoding (base64, url)"
+      }
+    ]
+  },
+  "doodle": {
+    "name": "Doodle Ipsum",
+    "category": "Image",
+    "description": "Generate random illustrations from data",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "about": "\n      [Doodle Ipsum](https://doodleipsum.com) is the *lorem ipsum* of illustrations. Learn more at [doodleipsum.com](https://doodleipsum.com).\n    ",
+    "icon": "\n      <svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M37 26C42.5228 26 47 21.5228 47 16C47 10.4772 42.5228 6 37 6C31.4772 6 27 10.4772 27 16C27 21.5228 31.4772 26 37 26Z\" fill=\"currentColor\"/>\n        <path d=\"M27 27H11C10.4477 27 10 27.4477 10 28V44C10 44.5523 10.4477 45 11 45H27C27.5523 45 28 44.5523 28 44V28C28 27.4477 27.5523 27 27 27Z\" fill=\"currentColor\"/>\n        <path d=\"M3.99981 21H21.9998C22.1768 21 22.3506 20.9529 22.5035 20.8638C22.6564 20.7746 22.7829 20.6464 22.87 20.4923C22.9572 20.3383 23.0019 20.1639 22.9995 19.9869C22.9972 19.8099 22.948 19.6367 22.8568 19.485L13.8568 4.48498C13.7612 4.34597 13.6333 4.23229 13.484 4.15375C13.3347 4.07522 13.1685 4.03418 12.9998 4.03418C12.8311 4.03418 12.6649 4.07522 12.5156 4.15375C12.3663 4.23229 12.2384 4.34597 12.1428 4.48498L3.14281 19.485C3.05166 19.6367 3.00241 19.8099 3.00009 19.9869C2.99777 20.1639 3.04246 20.3383 3.12961 20.4923C3.21675 20.6464 3.34323 20.7746 3.49611 20.8638C3.649 20.9529 3.82281 21 3.99981 21Z\" fill=\"currentColor\"/>\n      </svg>\n    ",
+    "video": "https://www.youtube.com/watch?v=kvUU1N-B_Ok",
+    "params": [
+      {
+        "name": "size",
+        "displayName": "Size",
+        "type": "number"
+      },
+      {
+        "name": "category",
+        "displayName": "Category (random|flat|hand-drawn|outline|abstract|avatar)",
+        "type": "string"
+      },
+      {
+        "name": "random",
+        "displayName": "Random Seed",
+        "type": "primitive"
+      }
+    ]
+  },
+  "encode": {
+    "name": "Encode Text",
+    "category": "Encoding",
+    "description": "Encode text in a variety of formats.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "encoding",
+        "type": "string",
+        "displayName": "Encoding (base64, url)"
+      }
+    ]
+  },
+  "fetch": {
+    "name": "Fetch JSON",
+    "category": "Data & APIs",
+    "description": "Fetch and optionally transform JSON",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "primitive"
+    },
+    "about": "\n      Given a URL, this column fetches JSON data at that URL. An optional [jq query](https://stedolan.github.io/jq/manual/#Basicfilters) transforms the JSON.\n    ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "video": "https://www.youtube.com/watch?v=EvpwhGeiH0U",
+    "params": [
+      {
+        "name": "url",
+        "displayName": "URL",
+        "type": "string"
+      },
+      {
+        "name": "query",
+        "displayName": "JQ Query",
+        "type": "string"
+      }
+    ]
+  },
+  "file-size": {
+    "name": "File Size",
+    "category": "Number",
+    "description": "Formats the value like a 'human-readable' file size (i.e. '13 KB', '4.1 MB', '102 bytes', etc).",
+    "author": "HubSpot <https://github.com/HubSpot/humanize>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "fileSize",
+        "type": "number",
+        "displayName": "File Size"
+      }
+    ]
+  },
+  "format-date": {
+    "name": "Format Date",
+    "category": "Date & Time",
+    "description": "Powerful date & time formatting with luxon.",
+    "author": "luxon <https://moment.github.io/luxon>",
+    "result": {
+      "type": "string"
+    },
+    "about": "\n    Learn about date formatting in [luxon's documentation](https://moment.github.io/luxon/#/formatting?id=table-of-tokens).\n  ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "date",
+        "type": "date-time",
+        "displayName": "Date"
+      },
+      {
+        "name": "format",
+        "type": "string",
+        "displayName": "Format"
+      }
+    ]
+  },
+  "glide-brand-image": {
+    "name": "Glide Brand Image",
+    "category": "Glide",
+    "description": "Glide 3D Data Shapes",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "icon": "\n        <svg\n          width=\"48\"\n          height=\"48\"\n          viewBox=\"0 0 26 27\"\n          fill=\"none\"\n          xmlns=\"http://www.w3.org/2000/svg\"\n        >\n          <path\n            d=\"M0 14.85L14.3 0V7.29C14.3 11.4653 11.0406 14.85 7.02 14.85H0Z\"\n            fill=\"currentColor\"\n          />\n          <path\n            d=\"M11.7 19.71C11.7 15.5347 14.9594 12.15 18.98 12.15H26L11.7 27V19.71Z\"\n            fill=\"currentColor\"\n          />\n        </svg>\n    ",
+    "params": [
+      {
+        "name": "category",
+        "displayName": "Category (3d, avatar, or gradient)",
+        "type": "string"
+      },
+      {
+        "name": "random",
+        "displayName": "Seed Value",
+        "type": "string"
+      }
+    ]
+  },
+  "hell-yes-code": {
+    "name": "Hell Yes-Code",
+    "category": "Code",
+    "description": "Runs JavaScript",
+    "author": "Mark Probst <mark@glideapps.com>",
+    "result": {
+      "type": "primitive"
+    },
+    "about": "Inludes [lodash](https://lodash.com/docs).",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M34.4381 11.774C34.1931 11.474 33.9761 11.205 33.7931 10.968C33.6822 10.8233 33.5338 10.7117 33.3641 10.6452C33.1943 10.5787 33.0096 10.5599 32.8299 10.5908C32.6502 10.6217 32.4824 10.7011 32.3446 10.8205C32.2068 10.9398 32.1043 11.0946 32.0481 11.268C31.4977 12.9485 30.6607 14.521 29.5741 15.916C29.6381 11.944 28.8511 4.93503 23.0951 1.16003C22.944 1.06079 22.7688 1.00435 22.5882 0.996737C22.4076 0.989122 22.2283 1.03061 22.0693 1.11679C21.9104 1.20296 21.7779 1.3306 21.6857 1.48613C21.5936 1.64166 21.5453 1.81926 21.5461 2.00003C21.5461 5.27603 19.7911 8.76703 16.7401 11.575C13.7881 14.293 6.92906 21.476 7.00006 29.433C7.05006 34.973 9.87106 42.633 17.0271 45.674C17.1341 42.197 18.6511 39.728 20.1351 37.348C21.5451 35.084 22.8781 32.948 23.0001 29.959C23.0077 29.7673 23.0703 29.5819 23.1805 29.4248C23.2906 29.2677 23.4436 29.1456 23.6213 29.073C23.7989 29.0005 23.9936 28.9806 24.1823 29.0157C24.3709 29.0508 24.5454 29.1395 24.6851 29.271C28.7181 33.071 30.8791 38.701 30.9851 45.571C36.1181 43.382 40.3221 38.611 40.9421 30.85C41.7431 20.771 36.8091 14.694 34.4381 11.774Z\" fill=\"currentColor\"/>\n    </svg>\n    ",
+    "video": "https://www.youtube.com/watch?v=c-I5S_zTwAc",
+    "params": [
+      {
+        "name": "code",
+        "displayName": "JavaScript code",
+        "type": "string"
+      },
+      {
+        "name": "p1",
+        "displayName": "p1",
+        "type": "primitive"
+      },
+      {
+        "name": "p2",
+        "displayName": "p2",
+        "type": "primitive"
+      },
+      {
+        "name": "p3",
+        "displayName": "p3",
+        "type": "primitive"
+      }
+    ]
+  },
+  "hyperformula": {
+    "name": "Hyperformula",
+    "category": "Code",
+    "description": "Run Excel formulas",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "primitive"
+    },
+    "about": "\n      Uses [handsontable.github.io/hyperformula](https://handsontable.github.io/hyperformula) to evaluate\n      Excel formulas.\n    ",
+    "icon": "<svg width=\"41\" height=\"44\" viewBox=\"0 0 41 44\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M30.802 1.61791C32.2704 0.484412 34.0962 -0.0858159 35.9487 0.0104718H40.6196L38.3202 4.0615H35.9127C35.2336 4.01682 34.5631 4.23344 34.0385 4.66699C33.518 5.22337 33.1787 5.92466 33.0654 6.67808L26.4122 37.7528C26.067 39.5449 25.1304 41.1693 23.7524 42.366C22.2845 43.5066 20.4547 44.0799 18.5985 43.9807H15.5089L15.5078 43.9861H10.4044L14.849 21.527C14.9408 21.1299 14.9868 20.7236 14.9859 20.316C15.0128 19.9308 14.9594 19.5442 14.8292 19.1806C14.6989 18.817 14.4945 18.4845 14.229 18.204C13.5913 17.6788 12.7751 17.4205 11.9512 17.4832C10.7477 17.4322 9.56904 17.8362 8.64988 18.6149C7.69907 19.5239 7.07776 20.7234 6.88386 22.0244L5.13947 31.0059H0L4.87276 6.57716H10.0122L8.36155 14.9099C9.90333 13.6526 11.8438 12.9879 13.8326 13.0357C15.5452 12.9446 17.2282 13.509 18.5396 14.6143C19.135 15.1912 19.5991 15.8897 19.9001 16.6622C20.2011 17.4347 20.3321 18.263 20.284 19.0906C20.2821 19.8008 20.2048 20.5088 20.0533 21.2027L16.3186 39.9224H18.6417C18.9779 39.9484 19.316 39.9076 19.6364 39.8024C19.9567 39.6973 20.2532 39.5298 20.5087 39.3097C21.0365 38.7613 21.3772 38.0598 21.4818 37.3059L28.135 6.23117C28.4858 4.43947 29.4244 2.81601 30.802 1.61791Z\" fill=\"currentColor\"/>\n</svg>\n",
+    "video": "https://www.youtube.com/watch?v=JJXUmACTDdk",
+    "params": [
+      {
+        "name": "formula",
+        "displayName": "Formula",
+        "type": "string"
+      },
+      {
+        "name": "A1",
+        "displayName": "A1",
+        "type": "primitive"
+      },
+      {
+        "name": "A2",
+        "displayName": "A2",
+        "type": "primitive"
+      },
+      {
+        "name": "A3",
+        "displayName": "A3",
+        "type": "primitive"
+      },
+      {
+        "name": "A4",
+        "displayName": "A4",
+        "type": "primitive"
+      },
+      {
+        "name": "A5",
+        "displayName": "A5",
+        "type": "primitive"
+      }
+    ]
+  },
+  "is-email": {
+    "name": "Email Validator",
+    "category": "Text",
+    "description": "Indicates whether text is an email.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "boolean"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "email",
+        "type": "string",
+        "displayName": "Email"
+      }
+    ]
+  },
+  "jq": {
+    "name": "Transform JSON",
+    "category": "Data & APIs",
+    "description": "Transform JSON with JQ",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "about": "Learn more about jq at https://stedolan.github.io/jq/",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "video": "https://www.youtube.com/watch?v=EvpwhGeiH0U",
+    "params": [
+      {
+        "name": "json",
+        "displayName": "JSON",
+        "type": "string"
+      },
+      {
+        "name": "query",
+        "displayName": "JQ Query",
+        "type": "string"
+      }
+    ]
+  },
+  "kebab-case": {
+    "name": "Kebab Case",
+    "category": "Text",
+    "description": "\"hello world\" → \"hello-world\"",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "lisp": {
+    "name": "LISP",
+    "category": "Code",
+    "description": "Runs LISP code",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "primitive"
+    },
+    "about": "\n      Uses [github.com/jcubic/lips](https://github.com/jcubic/lips), a \n      \"scheme-based powerful lisp interpreter written in JavaScript.\"\n    ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "video": "https://www.youtube.com/watch?v=G3FDnNZF5uA",
+    "params": [
+      {
+        "name": "code",
+        "displayName": "LISP",
+        "type": "string"
+      },
+      {
+        "name": "p1",
+        "displayName": "p1",
+        "type": "primitive"
+      },
+      {
+        "name": "p2",
+        "displayName": "p2",
+        "type": "primitive"
+      },
+      {
+        "name": "p3",
+        "displayName": "p3",
+        "type": "primitive"
+      },
+      {
+        "name": "p4",
+        "displayName": "p4",
+        "type": "primitive"
+      },
+      {
+        "name": "p5",
+        "displayName": "p5",
+        "type": "primitive"
+      }
+    ]
+  },
+  "lowercase": {
+    "name": "Lowercase Text",
+    "category": "Text",
+    "description": "Converts string, as space separated words, to lower case.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "ordinal": {
+    "name": "Ordinal",
+    "category": "Number",
+    "description": "Converts an integer to its ordinal as a string.",
+    "author": "HubSpot <https://github.com/HubSpot/humanize>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "displayName": "Number"
+      }
+    ]
+  },
+  "pad-end": {
+    "name": "Pad Text at End",
+    "category": "Text",
+    "description": "Pads string on the right side if it's shorter than length. Padding characters are truncated if they exceed length.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "length",
+        "type": "number",
+        "displayName": "Length"
+      },
+      {
+        "name": "chars",
+        "type": "string",
+        "displayName": "Padding"
+      }
+    ]
+  },
+  "pad-start": {
+    "name": "Pad Text at Start",
+    "category": "Text",
+    "description": "Pads string on the left side if it's shorter than length. Padding characters are truncated if they exceed length.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "length",
+        "type": "number",
+        "displayName": "Length"
+      },
+      {
+        "name": "chars",
+        "type": "string",
+        "displayName": "Padding"
+      }
+    ]
+  },
+  "pad": {
+    "name": "Pad Text",
+    "category": "Text",
+    "description": "Pads string on the left and right sides if it's shorter than length. Padding characters are truncated if they can't be evenly divided by length.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "length",
+        "type": "number",
+        "displayName": "Length"
+      },
+      {
+        "name": "chars",
+        "type": "string",
+        "displayName": "Padding"
+      }
+    ]
+  },
+  "pluralize": {
+    "name": "Pluralize Text",
+    "category": "Text",
+    "description": "Returns the plural version of a given word if the value is not 1. The default suffix is 's'.",
+    "author": "HubSpot <https://github.com/HubSpot/humanize>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "number",
+        "type": "number",
+        "displayName": "Number"
+      },
+      {
+        "name": "singular",
+        "type": "string",
+        "displayName": "Singular"
+      },
+      {
+        "name": "plural",
+        "type": "string",
+        "displayName": "Plural"
+      }
+    ]
+  },
+  "qrcode": {
+    "name": "QR Code",
+    "category": "Image",
+    "description": "Generate QR codes",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "about": "\n      Uses [goQR.me](https://goqr.me/api/)'s QR code generation API.\n    ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M16 2H2V16H16V2ZM14 14H4V4H14V14Z\" fill=\"currentColor\"/>\n      <path d=\"M31 42H29V46H46V44H31V42Z\" fill=\"currentColor\"/>\n      <path d=\"M12 6H6V12H12V6Z\" fill=\"currentColor\"/>\n      <path d=\"M2 46H16V32H2V46ZM4 34H14V44H4V34Z\" fill=\"currentColor\"/>\n      <path d=\"M12 36H6V42H12V36Z\" fill=\"currentColor\"/>\n      <path d=\"M32 2V16H46V2H32ZM44 14H34V4H44V14Z\" fill=\"currentColor\"/>\n      <path d=\"M42 6H36V12H42V6Z\" fill=\"currentColor\"/>\n      <path d=\"M46 18H42V22H46V18Z\" fill=\"currentColor\"/>\n      <path d=\"M6 26H2V30H6V26Z\" fill=\"currentColor\"/>\n      <path d=\"M23 18H15V20H25V16V14H27V10H25H23H21V6H23V8H30V2H28V6H25V2H24H20H19V12H23V14H19V16H23V18Z\" fill=\"currentColor\"/>\n      <path d=\"M5 24H9H11H12V26H8V28H12V30H20V28H14V26V22H11V19H9V22H7V18H2V20H5V24Z\" fill=\"currentColor\"/>\n      <path d=\"M24 42V37H20V33H18V39H22V42H18V44H22V46H27V44H24V42Z\" fill=\"currentColor\"/>\n      <path d=\"M34 22H30V17H28V24H38V22H36V20H39V18H36H34H32V20H34V22Z\" fill=\"currentColor\"/>\n      <path d=\"M32 40H35V42H39V40V38V35H35V38H32V35H30V38H28V30H26V28H24V22H17V26H19V24H22V28V32H26V38V40H28H30H32Z\" fill=\"currentColor\"/>\n      <path d=\"M44 27H41H39H34V31H32V27H30V33H36V29H39V32H41V29H44V35H41V41H46V39H43V37H46V29V27V24H44V27Z\" fill=\"currentColor\"/>\n      </svg>\n      ",
+    "video": "https://www.youtube.com/watch?v=142TGhaTMtI",
+    "params": [
+      {
+        "name": "content",
+        "displayName": "Content",
+        "type": "primitive"
+      },
+      {
+        "name": "size",
+        "displayName": "Size",
+        "type": "number"
+      }
+    ]
+  },
+  "regex": {
+    "name": "Extract Matching Text",
+    "category": "Text",
+    "description": "Extract text matching a regular expression.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "regex",
+        "type": "string",
+        "displayName": "Regular Expression"
+      }
+    ]
+  },
+  "repeat": {
+    "name": "Repeat Text",
+    "category": "Text",
+    "description": "Repeats the given string n times.",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      },
+      {
+        "name": "n",
+        "type": "number",
+        "displayName": "Repetitions"
+      }
+    ]
+  },
+  "start-case": {
+    "name": "Start Case",
+    "category": "Text",
+    "description": "\"hello world\" → \"Hello World\"",
+    "author": "lodash Project <lodash.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "time-ago": {
+    "name": "Relative Time",
+    "category": "Date & Time",
+    "description": "Given a date, returns a string with the relative time (e.g. '1 day ago').",
+    "author": "Nikolay Kuchumov <gitlab.com/catamphetamine>",
+    "result": {
+      "type": "string"
+    },
+    "about": "\n    Learn more at [gitlab.com/catamphetamine/javascript-time-ago](https://gitlab.com/catamphetamine/javascript-time-ago).\n  ",
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "date",
+        "type": "date-time",
+        "displayName": "Date"
+      },
+      {
+        "name": "now",
+        "type": "date-time",
+        "displayName": "Now"
+      },
+      {
+        "name": "style",
+        "type": "string",
+        "displayName": "Style (round, mini, twitter)"
+      }
+    ]
+  },
+  "translate": {
+    "name": "Google Translate",
+    "category": "Data & APIs",
+    "description": "Translate from one language to another",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "about": "\n      Find supported languages at [cloud.google.com/translate/docs/languages](https://cloud.google.com/translate/docs/languages).\n    ",
+    "icon": "\n      <svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <path d=\"M25.74 30.15L20.66 25.13L20.72 25.07C24.2 21.19 26.68 16.73 28.14 12.01H34V8H20V4H16V8H2V11.98H24.34C22.99 15.84 20.88 19.5 18 22.7C16.14 20.63 14.6 18.38 13.38 16H9.38C10.84 19.26 12.84 22.34 15.34 25.12L5.17 35.17L8 38L18 28L24.22 34.22L25.74 30.15ZM37 20H33L24 44H28L30.25 38H39.75L42 44H46L37 20ZM31.75 34L35 25.33L38.25 34H31.75Z\" fill=\"currentColor\"/>\n      </svg>\n    ",
+    "video": "https://www.youtube.com/watch?v=A3knNbGfXh4",
+    "params": [
+      {
+        "name": "text",
+        "displayName": "Text",
+        "type": "string"
+      },
+      {
+        "name": "language",
+        "displayName": "Target Language",
+        "type": "string"
+      },
+      {
+        "name": "key",
+        "displayName": "API Key",
+        "type": "string"
+      }
+    ]
+  },
+  "trim": {
+    "name": "Trim Whitespace",
+    "category": "Text",
+    "description": "Remove whitespace around text.",
+    "author": "Glide <hello@glideapps.com>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "text",
+        "type": "string",
+        "displayName": "Text"
+      }
+    ]
+  },
+  "truncate": {
+    "name": "Truncate Text",
+    "category": "Text",
+    "description": "Truncates a string if it is longer than the specified number of characters. Truncated strings will end with a translatable ellipsis sequence (\"…\").",
+    "author": "HubSpot <https://github.com/HubSpot/humanize>",
+    "result": {
+      "type": "string"
+    },
+    "icon": "<svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12.0002 34.828L2.58624 25.414C1.80524 24.633 1.80524 23.367 2.58624 22.586L12.0002 13.172L14.8292 16L6.82924 24L14.8292 32L12.0002 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M36.0004 34.828L33.1714 32L41.1714 24L33.1714 16L36.0004 13.172L45.4144 22.586C46.1954 23.367 46.1954 24.633 45.4144 25.414L36.0004 34.828Z\" fill=\"currentColor\"/>\n<path d=\"M26.5485 5.57617L17.5723 41.4553L21.4527 42.4261L30.4289 6.54697L26.5485 5.57617Z\" fill=\"currentColor\"/>\n</svg>",
+    "params": [
+      {
+        "name": "string",
+        "type": "string",
+        "displayName": "String"
+      },
+      {
+        "name": "length",
+        "type": "number",
+        "displayName": "Length"
+      },
+      {
+        "name": "ending",
+        "type": "string",
+        "displayName": "Ending"
+      }
+    ]
+  },
+  "youtube-thumbnail": {
+    "name": "YouTube Thumbnail",
+    "category": "Image",
+    "description": "Display video thumbnail images",
+    "author": "David Siegel <david@glideapps.com>",
+    "result": {
+      "type": "image-uri"
+    },
+    "icon": "\n      <svg width=\"48\" height=\"48\" viewBox=\"0 0 48 48\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M47.5 14.4C47.5 14.4 47 11.1 45.6 9.59998C43.8 7.69998 41.7 7.69998 40.8 7.59998C34.1 7.09998 24 7.09998 24 7.09998C24 7.09998 13.9 7.09998 7.2 7.59998C6.3 7.69998 4.2 7.69998 2.4 9.59998C1 11.1 0.5 14.4 0.5 14.4C0.5 14.4 0 18.3 0 22.2V25.8C0 29.7 0.5 33.6 0.5 33.6C0.5 33.6 1 36.9 2.4 38.4C4.2 40.3 6.6 40.3 7.7 40.5C11.5 40.9 24 41 24 41C24 41 34.1 41 40.8 40.5C41.7 40.4 43.8 40.4 45.6 38.5C47 37 47.5 33.7 47.5 33.7C47.5 33.7 48 29.8 48 25.9V22.3C48 18.3 47.5 14.4 47.5 14.4ZM19 30.2V16.7L32 23.5L19 30.2Z\" fill=\"currentColor\"/>\n</svg>\n    ",
+    "params": [
+      {
+        "name": "videoUrl",
+        "displayName": "Video URL",
+        "type": "uri"
+      }
+    ]
+  }
+}
